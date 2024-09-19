@@ -10,6 +10,10 @@ function App() {
 				<ProductsList />
 				<Cart />
 			</div>
+			<div className="attribution mt-8">
+				Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+				Coded by <a href="https://github.com/Abuu998">NDUWIMANA Abubakar</a>.
+			</div>
 		</div>
 	)
 }

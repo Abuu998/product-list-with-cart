@@ -6,7 +6,7 @@ function ProductCard({ product }) {
 
     const existProd = cart.find(prod => prod.name === product.name)
 
-    const existStyles = !existProd ? "bg-white text-myrose-900 outline-1 outline outline-myred" : "bg-myred text-white"
+    const existStyles = !existProd ? "bg-white text-myrose-900 outline-1 outline outline-myrose-900 hover:outline-myred" : "bg-myred text-white"
     const imgExistStyles = existProd && "outline-1 outline outline-myred"
 
     return (
@@ -41,20 +41,20 @@ function ProductCard({ product }) {
                     ) : (
                         <span className="flex items-center gap-6 justify-center py-2 px-4">
                             <Button
-                                className="border-white border-solid border w-4 aspect-square grid place-items-center rounded-full"
+                                className="border-white border-solid border w-4 aspect-square grid place-items-center rounded-full hover:bg-white transition-colors duration-500 ease-in-out group"
                                 onClick={() => removeFromCart(product.name)}
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2">
-                                    <path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/>
+                                    <path fill="#fff" className="group-hover:fill-myred" d="M0 .375h10v1.25H0V.375Z"/>
                                 </svg>
                             </Button>
                             <small>{existProd && existProd.quantity}</small>
                             <Button
-                                className="border-white border border-solid w-4 aspect-square grid place-items-center rounded-full"
+                                className="border-white border border-solid w-4 aspect-square grid place-items-center rounded-full hover:bg-white transition-colors duration-500 ease-in-out group"
                                 onClick={() => addToCart(product)}
                             >
                                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
-                                    <path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/>
+                                    <path fill="#fff" className="group-hover:fill-myred" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/>
                                 </svg>
                             </Button>
                         </span>

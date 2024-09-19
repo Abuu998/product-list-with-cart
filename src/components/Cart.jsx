@@ -1,4 +1,5 @@
 import { useCart } from "../context/CartContext"
+import { useModal } from "../context/ModalContext"
 import Button from "./Button"
 import CarbonNeutralSvg from "./CarbonNeutralSvg"
 import CartItem from "./CartItem"
@@ -6,6 +7,7 @@ import EmptyCartSvg from "./EmptyCartSvg"
 
 function Cart() {
     const { totalItems, totalPrice, cart, removeItem } = useCart()
+    const { open } = useModal()
 
     const cartItems = cart.map(item => (
         <CartItem key={item.name} item={item} removeItem={() => removeItem(item.name)} />
@@ -35,7 +37,7 @@ function Cart() {
                         </div>
                         <Button
                             className="bg-myred text-white text-sm mt-6 w-full p-2 rounded-full hover:bg-[#5f1c07]"
-                            onClick={() => {}}
+                            onClick={() => open()}
                         >
                             Confirm Order
                         </Button>

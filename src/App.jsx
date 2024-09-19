@@ -1,4 +1,6 @@
 import Cart from "./components/Cart"
+import Modal from "./components/modal/Modal"
+import ModalContent from "./components/modal/ModalContent"
 import ProductsList from "./components/ProductsList"
 
 
@@ -14,6 +16,9 @@ function App() {
 				Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
 				Coded by <a href="https://github.com/Abuu998">NDUWIMANA Abubakar</a>.
 			</div>
+			<Modal>
+				<ModalContent />
+			</Modal>
 		</div>
 	)
 }

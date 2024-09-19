@@ -20,12 +20,20 @@
         
         display: grid;
         grid-template-columns: 
-            minmax(var(--padding-size), 1fr)
+            [full-bleed-start] minmax(var(--padding-size), 1fr)
             [content-start] min(100% - var(--padding-size) * 2, var(--content-max-width)) [content-end]
-            minmax(var(--padding-size), 1fr);
+            minmax(var(--padding-size), 1fr) [full-bleed-end];
     }
 
-    .contain > * {
+    .contain > :not(.full-bleed),
+    .full-bleed > :not(.full-bleed) {
         grid-column: content;
+    }
+
+    .full-bleed {
+        grid-column: full-bleed;
+
+        display: grid;
+        grid-template-columns: inherit;
     }
 }

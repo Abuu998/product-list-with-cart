@@ -1,4 +1,4 @@
-import orderConfirmed from "../../assets/images/icon-order-confirmed.svg"
+import orderConfirmed from "/assets/images/icon-order-confirmed.svg"
 import { useCart } from "../../context/CartContext"
 import ConfirmedOrderItem from "../ConfirmedOrderItem"
 import Button from "../Button"

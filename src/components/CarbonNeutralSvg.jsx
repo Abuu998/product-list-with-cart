@@ -1,4 +1,4 @@
-import carbonNeutral from "../assets/images/icon-carbon-neutral.svg"
+import carbonNeutral from "/assets/images/icon-carbon-neutral.svg"
 
 function CarbonNeutralSvg() {
     return (

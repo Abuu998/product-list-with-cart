@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Source Code](https://github.com/Abuu998/product-list-with-cart)
+- Live Site URL: [Products with Cart](https://products-with-cart.netlify.app/)
 
 ## My process
 
@@ -78,3 +78,8 @@ I would like to continue using CSS Grid more in my projects.
 
 - Frontend Mentor - [@Abu0998](https://www.frontendmentor.io/profile/Abuu998)
 - Twitter - [@Abu0998](https://www.twitter.com/Abu0998)
+
+
+### Feedback
+
+If you have any feedback, on what i can improve on, or what i can do better, or any feedback at all is much appreciated. Thank you <3

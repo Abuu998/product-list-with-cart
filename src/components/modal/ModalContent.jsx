@@ -13,7 +13,9 @@ function ModalContent() {
     ))
 
     return (
-        <div className="bg-white p-4 rounded-lg max-sm:fixed inset-0 top-[10%]">
+        <div className="bg-white p-4 rounded-lg max-sm:fixed inset-0 top-[10%] z-[999]" onClick={e => {
+            e.stopPropagation()
+        }}>
             <img src={orderConfirmed} alt="tick" className="w-10 aspect-square" />
             <h1 className="text-4xl font-bold text-myrose-900 text-balance mt-4">Order Confirmed</h1>
             <small className="text-sm text-myrose-400">We hope you enjoy your food</small>
